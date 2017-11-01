@@ -1,0 +1,96 @@
+#cont1 {
+    max-width: 380px;
+    background: white;
+    padding: 30px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    border: 6px solid #305A72;
+}
+#cont1 .button {
+    padding-top: 20px;
+    color: #305A72;
+    text-align: center;
+}
+#addButton{
+    background-color: #305A72;
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+}
+.refresh {
+    text-align: center;
+}
+#refreshButton{
+    font-size: 14px;
+    background-color: #305A72;
+    color: white;
+    border-radius: 10px;
+}
+#cont2 {
+    display:none;
+    max-width: 850px;
+    padding: 30px;
+    margin: 10px auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    background: #FFF;
+    border: 6px solid #305A72;
+}
+
+#emptyList {
+    display: none;
+    font-size: 20px;
+    text-align: center;
+    max-width: 250px;
+    margin: 10px auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    background: #FFF;
+    border: 6px solid #305A72
+}
+
+.editButton,
+.saveButton {
+    font-size: 14px;
+    background-color: #305A72;
+    color: white;
+    border-radius: 2px;
+    width: 50px;
+}
+.deleteButton{
+    font-size: 14px;
+    background-color: #305A72;
+    color: white;
+    border-radius: 2px;
+    width: 60px;
+}
+
+#suitcase {
+    font-size: 60px;
+    padding: 20px 20px;
+}
+.header {
+    background-color: #305A72;
+}
+main{
+    background-image: url(http://www.revilee.com/assets/Uploads/Employees2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+th {
+    color: white;
+    text-align: center;
+    width: 150px;
+    background-color: #305A72;
+    border: 2px solid white;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+}
+td{
+    text-align: center;
+    background-color: lightgray;
+    border: 2px solid white;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+}

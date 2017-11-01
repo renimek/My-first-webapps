@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+
+    <script>
+			// Initialize Firebase
+			var config = {
+				apiKey: "AIzaSyCRaL3C6r02J3XAaJFMLfJllo5YIbgl8Z4",
+				authDomain: "fir-e0e6a.firebaseapp.com",
+				databaseURL: "https://fir-e0e6a.firebaseio.com",
+				projectId: "fir-e0e6a",
+				storageBucket: "fir-e0e6a.appspot.com",
+				messagingSenderId: "178740963095"
+			};
+			firebase.initializeApp(config);
+    </script>
+    <script src="functions1.js"></script>
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">List of my apps</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="index.html">First app</a>
+            <a class="mdl-navigation__link" href="index1.html">Second app</a>
+        </nav>
+    </div>
+    <main id="mainContainer" class="mdl-layout__content">
+        <a href="index1.html"><i id="suitcase" class="material-icons">work</i></a>
+            <form id="form">
+                <div id="cont1">
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <input class ="mdl-textfield__input" id="firstName" type="text" pattern="[a-zA-Z]+" placeholder="First name...">
+                            <span class="mdl-textfield__error">Must contain only letters! Cannot be empty!</span>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <input class ="mdl-textfield__input" id="lastName" type="text" pattern="[a-zA-Z]+" placeholder="Last name...">
+                            <span class="mdl-textfield__error">Must contain only letters! Cannot be empty!</span>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <input class ="mdl-textfield__input" id="age" type="text" pattern="[0-9]+" placeholder="Age...">
+                            <span class="mdl-textfield__error">Only integers! Cannot be empty!</span>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <input class ="mdl-textfield__input" id="animal" type="text" pattern="[a-zA-Z]+" placeholder="Favorite animal...">
+                            <span class="mdl-textfield__error">Must contain only letters! Cannot be empty!</span>
+                        </div>
+                    <div class="button">
+                        <button id="addButton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="submit" type="Submit" onclick="addNew(); return false;">
+                            Add employee
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="refresh">
+                <input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="refreshButton" type="button" value="Show current employees" onclick="refresh(); return false;">
+            </div>
+
+            <div id="emptyList">
+                List is empty
+            </div>
+
+            <div id="cont2">
+                <table id="results">
+                    <tr id="perm">
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                        <th>Specialization</th>
+                    </tr>
+                </table>
+            </div>
+    </main>
+</div>
+</body>
+</html>
